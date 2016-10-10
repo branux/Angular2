@@ -1,0 +1,2 @@
+Baseado no quickstart do Angular
+https://angular.io/docs/ts/latest/quickstart.html
