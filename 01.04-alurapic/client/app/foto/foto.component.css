@@ -1,0 +1,9 @@
+.efeito:hover{
+    cursor: pointer;
+    transition:transform 0.5s;
+    transform:scale(1.15);
+}
+
+.efeito{
+    transition:transform 1s;
+}
