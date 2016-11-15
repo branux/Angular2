@@ -15,15 +15,16 @@ var ProfileComponent = (function () {
         this._gitHubServ = _gitHubServ;
     }
     ProfileComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this._gitHubServ.getUser()
             .subscribe(function (user) {
-            console.log(user);
+            _this.user = user;
         });
     };
     ProfileComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'profile',
+            selector: 'profile-app',
             templateUrl: 'profile.component.html'
         }), 
         __metadata('design:paramtypes', [github_service_1.GitHubService])

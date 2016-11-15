@@ -2,4 +2,4 @@
 - Crie um componente profile
 - Crie o serviço github.service.ts
 - Adicione o HttpModule ao Módulo da aplicação
-- Adicione o GithibService como provider em app.component.ts e import no component
+- Adicione o GithubService como provider em app.component.ts e import no component
