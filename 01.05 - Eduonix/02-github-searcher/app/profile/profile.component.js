@@ -20,6 +20,11 @@ var ProfileComponent = (function () {
             .subscribe(function (user) {
             _this.user = user;
         });
+        this._gitHubServ.getRepos()
+            .subscribe(function (repos) {
+            _this.repos = repos;
+            //console.log(this.repos);
+        });
     };
     ProfileComponent = __decorate([
         core_1.Component({

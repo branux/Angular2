@@ -24,6 +24,11 @@ var GitHubService = (function () {
             '?client_id=' + this.client_id + '?client_secret=' + this.client_secret)
             .map(function (res) { return res.json(); });
     };
+    GitHubService.prototype.getRepos = function () {
+        return this._http.get('http://api.github.com/users/' + this.username +
+            '/repos?client_id=' + this.client_id + '?client_secret=' + this.client_secret)
+            .map(function (res) { return res.json(); });
+    };
     GitHubService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http])
