@@ -1,0 +1,3 @@
+- Criar o componente jumbotron com seus respectivos arquivos
+- Retire a margem baixa do navbar
+- Criar componentes para as páginas Home, About e Contact

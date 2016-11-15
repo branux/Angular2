@@ -1,0 +1,6 @@
+- Remove os estilos em styles.css
+- Altere o template do app.component.ts para '<h1>My first Angular App</h1>'
+- Busque o CDN do Bootstrap em www.bootstrapcdn.com e insira-o no index.html
+- Crie um componente navbar:
+    - crie uma pasta navbar em app e os arquivos do componente
+- Registre o componente no módulo (app.module.ts)

@@ -1,0 +1,5 @@
+- Adicione a tag <base href="/">
+- Na pasta app crie o arquivo app.routing.ts
+- Importe o arquivo no módulo
+- Adicione a tag <router-outlet> no app.component.html
+- Adicione os links com a diretiva routerLink
