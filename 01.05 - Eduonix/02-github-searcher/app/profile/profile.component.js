@@ -9,17 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var github_service_1 = require('../services/github.service');
 var ProfileComponent = (function () {
-    function ProfileComponent() {
+    function ProfileComponent(_gitHubServ) {
+        this._gitHubServ = _gitHubServ;
     }
-    ProfileComponent.prototype.ngOnInit = function () { };
+    ProfileComponent.prototype.ngOnInit = function () {
+        this._gitHubServ.getUser()
+            .subscribe(function (user) {
+            console.log(user);
+        });
+    };
     ProfileComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'profile',
             templateUrl: 'profile.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [github_service_1.GitHubService])
     ], ProfileComponent);
     return ProfileComponent;
 }());
